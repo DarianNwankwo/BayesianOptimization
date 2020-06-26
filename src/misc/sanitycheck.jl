@@ -13,11 +13,6 @@ ys = X[1, :] + 2*sin.(X[2, :])
 l̇ = rand()
 ẏ = rand(N)
 
-############################## Helper Functions ################################
-function findiff_check(func)
-    return
-end
-
 ############################## Sanity Check Prompt #############################
 println("Sanity Checks for Derivaitves Should Be Close To Machine Epsilon\n")
 
