@@ -1,10 +1,14 @@
 module BayesianOptimization
 
+using LinearAlgebra
+
 # Write your package code here.
-include("kernels/kernels.jl")
+include("means/mean.jl");
+include("kernels/kernels.jl");
+include("GP/GP.jl");
+include("acquisition/acquisition.jl");
+include("bayesopt/bayesopt.jl");
 
-mutable struct BayesOpt{}
-
-end
+# export BayesOpt, ZeroMean, SquaredExponential
 
 end
